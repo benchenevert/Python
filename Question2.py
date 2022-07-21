@@ -12,21 +12,28 @@ import matplotlib.pyplot as plt
 import numpy as np
 import sympy as sp
 
-i = sp.Symbol('i')
 n = sp.Symbol('n')
 
 def sum1(n):
     
-    x_totals = []
+    n_totals = []
     total = 0
-    for n in range(1, 10000):
+    for n in range(1000):
         
-        sp.summation(((-1)**(n + 1)) *  (1/(n * (n + 1))), (i, 0, 1))
+            
+        total += (((-1)**(n + 1) * 1/n))
+        
+        n_totals.append(total)
 
-
-print(sum1(n))
-
-
+        display(n_totals)
+    
+    
+    # I have destroyed and retried this code more times than I have blinked and I don't know what to do.
+    # The closest I have gotten has been an array with 10000 entries but they are all '-1'.
+    # I believe that this version of my code is the closest to what is being asked but I keep getting 
+    # getting the error "division by zero".
+    
+  
 
 
 
