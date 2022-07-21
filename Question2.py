@@ -19,12 +19,12 @@ def sum1(n):
     
     x_totals = []
     total = 0
-    for n in range(10000):
+    for n in range(1, 10000):
         
-        sp.summation(((-1)**(n + 1)) *  (1/(n * (n + 1))), (i, 0, n))
+        sp.summation(((-1)**(n + 1)) *  (1/(n * (n + 1))), (i, 0, 1))
 
 
-
+print(sum1(n))
 
 
 
