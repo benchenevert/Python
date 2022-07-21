@@ -26,6 +26,8 @@ def sum1(n):
         n_totals.append(total)
 
         display(n_totals)
+        
+        plt.plot(n,n_totals)
     
     
     # I have destroyed and retried this code more times than I have blinked and I don't know what to do.
