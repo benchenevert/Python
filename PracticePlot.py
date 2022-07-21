@@ -19,6 +19,6 @@ def sum2(N, x = []):
             
         x_totals.append(total)
         
-    #return x_totals
+    #return x_totals 
     plt.plot(x,x_totals)       
            
